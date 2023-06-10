@@ -1,11 +1,11 @@
 
 #product{
- padding-left: 150px;
- 
+ padding-left: 200px;
+ margin: -100px;
   
 }
 .container1 {
-
+    
     width: 300px;
     height: 400px;
     float: left;
@@ -18,9 +18,14 @@
     
     -webkit-box-shadow: 0 0 5px #000;
           box-shadow: 0 0 5px #000;
+
+          .container1 .a {
+            list-style: none;
+            text-decoration: none;
+          }
     
 } 
-  .container1-overlay {
+  .container1 .overlay {
     width: 100%;
     height: 100%;
     
@@ -37,12 +42,12 @@
   }
   
   
-  .container1-items {
+  .container1 .items {
     padding-left: 20px;
     letter-spacing: 3px;
   }
   
-  .container1-head {
+  .container1 .head {
     font-size: 30px;
     line-height: 40px;
     
@@ -63,7 +68,7 @@
     }
   }
   
-  .container1-price {
+  .container1 .price {
    
     font-size: 22px;
     line-height: 15px;
@@ -82,7 +87,7 @@
     
   }
   
-  .container1-cart {
+  .container1 .cart {
     font-size: 12px;
     opacity: 0;
     letter-spacing: 1px;
@@ -139,7 +144,7 @@
           box-shadow: 0 0 5px #000;
     }
   
-  .overlay {
+  .container2 .overlay {
     width: 100%;
     height: 100%;
     
@@ -156,12 +161,12 @@
   }
   
   
-  .items {
+  .container2 .items {
     padding-left: 20px;
     letter-spacing: 3px;
   }
   
-  .head {
+  .container2 .head {
     font-size: 30px;
     line-height: 40px;
     
@@ -182,8 +187,7 @@
     }
   }
   
-  .price {
-   
+  .container2 .price {
     font-size: 22px;
     line-height: 10px;
     font-weight: bold;  
@@ -198,7 +202,7 @@
     }
   }
   
-  .cart {
+  .container2 .cart {
     font-size: 12px;
     opacity: 0;
     letter-spacing: 1px;
@@ -213,7 +217,7 @@
     }
   }
   
-  .container:hover .overlay {
+  .container2:hover .overlay {
     opacity: 1;
     & .head {
       transform: translateY(0px);
@@ -253,7 +257,7 @@
           box-shadow: 0 0 5px #000;
     }
   
-  .overlay {
+  .container3 .overlay {
     width: 100%;
     height: 100%;
     
@@ -270,12 +274,12 @@
   }
   
   
-  .items {
+  .container3 .items {
     padding-left: 20px;
     letter-spacing: 3px;
   }
   
-  .head {
+  .container3 .head {
     font-size: 30px;
     line-height: 40px;
     
@@ -296,7 +300,7 @@
     }
   }
   
-  .price {
+  .container3 .price {
    
     font-size: 22px;
     line-height: 10px;
@@ -309,10 +313,12 @@
       color: lighten(rgb(77, 77, 77),40%);
       margin-top: 22px;
       margin-bottom: 22px;
+      
     }
+   
   }
   
-  .cart {
+  .container3 .cart {
     font-size: 12px;
     opacity: 0;
     letter-spacing: 1px;
@@ -327,7 +333,7 @@
     }
   }
   
-  .container:hover .overlay {
+  .container3:hover .overlay {
     opacity: 1;
     & .head {
       transform: translateY(0px);
@@ -350,8 +356,714 @@
       opacity: 1;
     }
   }
+
+  /* 4=============================
+  ======================== */
+  .container4 {
+    
+    width: 300px;
+    height: 400px;
+    float: left;
+    margin: 20px;
+    
+    background: url("../giyim-markasi/image/koldugmedetaykremabaya.jpeg");
+    background-color: black;
+    background-size: cover;
+    cursor: pointer;
+    
+    -webkit-box-shadow: 0 0 5px #000;
+          box-shadow: 0 0 5px #000;
+    
+} 
+  .container4 .overlay {
+    width: 100%;
+    height: 100%;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    
+    background: rgba(77, 77, 77, .9);
+    color: #FFF8DE;
+    opacity: 0;
+    transition: all 0.5s;
+    
+    font-family: 'Playfair Display', serif;
+  }
   
   
+  .container4 .items {
+    padding-left: 20px;
+    letter-spacing: 3px;
+  }
   
+  .container4 .head {
+    font-size: 30px;
+    line-height: 40px;
+    
+    transform: translateY(40px);
+    transition: all 0.7s;
+  
+    .hr {
+      display: block;
+      width: 0;
+      
+      border: none;
+      border-bottom: solid 2px #FFF8DE;
+      
+      position: absolute;
+      bottom: 0; left:20px;
+      
+      transition: all .5s;
+    }
+  }
+  
+  .container4 .price {
+   
+    font-size: 22px;
+    line-height: 15px;
+    font-weight: bold;  
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.7s;
+
+    .old {
+      
+      
+      margin-top: 22px;
+      margin-bottom: 22px;
+    }
+
+    
+  }
+  
+  .container4 .cart {
+    font-size: 12px;
+    opacity: 0;
+    letter-spacing: 1px;
+    font-family: 'Lato', sans-serif;
+    transform: translateY(40px);
+    transition: all 0.7s;
+    .my-icon {
+      font-size: 16px;
+    }
+    .cart span {
+      margin-left: 10px;
+    }
+  }
+  
+  .container4:hover .overlay {
+    opacity: 1;
+    & .head {
+      transform: translateY(0px);
+    }
+    
+    & hr {
+      width: 130px;
+      transition-delay: 0.4s;
+    }
+    
+    & .price {
+      transform: translateY(0px);
+      transition-delay: 0.3s;
+      opacity: 1;
+    }
+    
+    & .cart {
+      transform: translateY(0px);
+      transition-delay: 0.6s;
+      opacity: 1;
+    }
+  }
+/* 5=========
+=========================
+================ */
+
+.container5 {
+    
+  width: 300px;
+  height: 400px;
+  float: left;
+  margin: 20px;
+  
+  background: url("../giyim-markasi/image/retromaviabaya.jpeg");
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  
+  -webkit-box-shadow: 0 0 5px #000;
+        box-shadow: 0 0 5px #000;
+  
+} 
+.container5 .overlay {
+  width: 100%;
+  height: 100%;
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+  
+  background: rgba(77, 77, 77, .9);
+  color: #FFF8DE;
+  opacity: 0;
+  transition: all 0.5s;
+  
+  font-family: 'Playfair Display', serif;
+}
+
+
+.container5 .items {
+  padding-left: 20px;
+  letter-spacing: 3px;
+}
+
+.container5 .head {
+  font-size: 30px;
+  line-height: 40px;
+  
+  transform: translateY(40px);
+  transition: all 0.7s;
+
+  .hr {
+    display: block;
+    width: 0;
+    
+    border: none;
+    border-bottom: solid 2px #FFF8DE;
+    
+    position: absolute;
+    bottom: 0; left:20px;
+    
+    transition: all .5s;
+  }
+}
+
+.container5 .price {
+ 
+  font-size: 22px;
+  line-height: 15px;
+  font-weight: bold;  
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s;
+
+  .old {
+    
+    
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+
+  
+}
+
+.container5 .cart {
+  font-size: 12px;
+  opacity: 0;
+  letter-spacing: 1px;
+  font-family: 'Lato', sans-serif;
+  transform: translateY(40px);
+  transition: all 0.7s;
+  .my-icon {
+    font-size: 16px;
+  }
+  .cart span {
+    margin-left: 10px;
+  }
+}
+
+.container5:hover .overlay {
+  opacity: 1;
+  & .head {
+    transform: translateY(0px);
+  }
+  
+  & hr {
+    width: 130px;
+    transition-delay: 0.4s;
+  }
+  
+  & .price {
+    transform: translateY(0px);
+    transition-delay: 0.3s;
+    opacity: 1;
+  }
+  
+  & .cart {
+    transform: translateY(0px);
+    transition-delay: 0.6s;
+    opacity: 1;
+  }
+}
+
+  /* 6================================== */
+  
+  .container6 {
+    
+    width: 300px;
+    height: 400px;
+    float: left;
+    margin: 20px;
+    
+    background: url("../giyim-markasi/image/kahveabaya.jpeg");
+    background-color: black;
+    background-size: cover;
+    cursor: pointer;
+    
+    -webkit-box-shadow: 0 0 5px #000;
+          box-shadow: 0 0 5px #000;
+    
+} 
+  .container6 .overlay {
+    width: 100%;
+    height: 100%;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    
+    background: rgba(77, 77, 77, .9);
+    color: #FFF8DE;
+    opacity: 0;
+    transition: all 0.5s;
+    
+    font-family: 'Playfair Display', serif;
+  }
+  
+  
+  .container6 .items {
+    padding-left: 20px;
+    letter-spacing: 3px;
+  }
+  
+  .container6 .head {
+    font-size: 30px;
+    line-height: 40px;
+    
+    transform: translateY(40px);
+    transition: all 0.7s;
+  
+    .hr {
+      display: block;
+      width: 0;
+      
+      border: none;
+      border-bottom: solid 2px #FFF8DE;
+      
+      position: absolute;
+      bottom: 0; left:20px;
+      
+      transition: all .5s;
+    }
+  }
+  
+  .container6 .price {
+   
+    font-size: 22px;
+    line-height: 15px;
+    font-weight: bold;  
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.7s;
+
+    .old {
+      
+      
+      margin-top: 22px;
+      margin-bottom: 22px;
+    }
+
+    
+  }
+  
+  .container6 .cart {
+    font-size: 12px;
+    opacity: 0;
+    letter-spacing: 1px;
+    font-family: 'Lato', sans-serif;
+    transform: translateY(40px);
+    transition: all 0.7s;
+    .my-icon {
+      font-size: 16px;
+    }
+    .cart span {
+      margin-left: 10px;
+    }
+  }
+  
+  .container6:hover .overlay {
+    opacity: 1;
+    & .head {
+      transform: translateY(0px);
+    }
+    
+    & hr {
+      width: 130px;
+      transition-delay: 0.4s;
+    }
+    
+    & .price {
+      transform: translateY(0px);
+      transition-delay: 0.3s;
+      opacity: 1;
+    }
+    
+    & .cart {
+      transform: translateY(0px);
+      transition-delay: 0.6s;
+      opacity: 1;
+    }
+  }
+
+
+  .hcontainer1 {
+    
+    width: 300px;
+    height: 400px;
+    float: left;
+    margin: 20px;
+    
+    background: url("../giyim-markasi/image/ketenabaya.jpeg");
+    background-color: black;
+    background-size: cover;
+    cursor: pointer;
+    
+    -webkit-box-shadow: 0 0 5px #000;
+          box-shadow: 0 0 5px #000;
+
+          .container1 .a {
+            list-style: none;
+            text-decoration: none;
+          }
+    
+} 
+  .hcontainer1 .overlay {
+    width: 100%;
+    height: 100%;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    
+    background: rgba(77, 77, 77, .9);
+    color: #FFF8DE;
+    opacity: 0;
+    transition: all 0.5s;
+    
+    font-family: 'Playfair Display', serif;
+  }
+  
+  
+  .hcontainer1 .items {
+    padding-left: 20px;
+    letter-spacing: 3px;
+  }
+  
+  .hcontainer1 .head {
+    font-size: 30px;
+    line-height: 40px;
+    
+    transform: translateY(40px);
+    transition: all 0.7s;
+  
+    .hr {
+      display: block;
+      width: 0;
+      
+      border: none;
+      border-bottom: solid 2px #FFF8DE;
+      
+      position: absolute;
+      bottom: 0; left:20px;
+      
+      transition: all .5s;
+    }
+  }
+  
+  .hcontainer1 .price {
+   
+    font-size: 22px;
+    line-height: 15px;
+    font-weight: bold;  
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.7s;
+
+    .old {
+      
+      
+      margin-top: 22px;
+      margin-bottom: 22px;
+    }
+
+    
+  }
+  
+  .hcontainer1 .cart {
+    font-size: 12px;
+    opacity: 0;
+    letter-spacing: 1px;
+    font-family: 'Lato', sans-serif;
+    transform: translateY(40px);
+    transition: all 0.7s;
+    .my-icon {
+      font-size: 16px;
+    }
+    .cart span {
+      margin-left: 10px;
+    }
+  }
+  
+  .hcontainer1:hover .overlay {
+    opacity: 1;
+    & .head {
+      transform: translateY(0px);
+    }
+    
+    & hr {
+      width: 130px;
+      transition-delay: 0.4s;
+    }
+    
+    & .price {
+      transform: translateY(0px);
+      transition-delay: 0.3s;
+      opacity: 1;
+    }
+    
+    & .cart {
+      transform: translateY(0px);
+      transition-delay: 0.6s;
+      opacity: 1;
+    }
+  }
+/* home page 2 container */
+
+.hcontainer2 {
+
+  width: 300px;
+  height: 400px;
+  float: left;
+  margin: 20px;
+  
+  background: url("../giyim-markasi/image/bebemaviabaya2.jpeg");
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  
+  -webkit-box-shadow: 0 0 5px #000;
+        box-shadow: 0 0 5px #000;
+  }
+
+.hcontainer2 .overlay {
+  width: 100%;
+  height: 100%;
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+  
+  background: rgba(77, 77, 77, .9);
+  color: #FFF8DE;
+  opacity: 0;
+  transition: all 0.5s;
+  
+  font-family: 'Playfair Display', serif;
+}
+
+
+.hcontainer2 .items {
+  padding-left: 20px;
+  letter-spacing: 3px;
+}
+
+.hcontainer2 .head {
+  font-size: 30px;
+  line-height: 40px;
+  
+  transform: translateY(40px);
+  transition: all 0.7s;
+
+  .hr {
+    display: block;
+    width: 0;
+    
+    border: none;
+    border-bottom: solid 2px #FFF8DE;
+    
+    position: absolute;
+    bottom: 0; left:20px;
+    
+    transition: all .5s;
+  }
+}
+
+.hcontainer2 .price {
+  font-size: 22px;
+  line-height: 10px;
+  font-weight: bold;  
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s;
+  .old {
+    
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+}
+
+.hcontainer2 .cart {
+  font-size: 12px;
+  opacity: 0;
+  letter-spacing: 1px;
+  font-family: 'Lato', sans-serif;
+  transform: translateY(40px);
+  transition: all 0.7s;
+  .my-icon {
+    font-size: 16px;
+  }
+  .cart span {
+    margin-left: 10px;
+  }
+}
+
+.hcontainer2:hover .overlay {
+  opacity: 1;
+  & .head {
+    transform: translateY(0px);
+  }
+  
+  & hr {
+    width: 130px;
+    transition-delay: 0.4s;
+  }
+  
+  & .price {
+    transform: translateY(0px);
+    transition-delay: 0.3s;
+    opacity: 1;
+  }
+  
+  & .cart {
+    transform: translateY(0px);
+    transition-delay: 0.6s;
+    opacity: 1;
+  }
+}
+/* homepage container3 */
+.hcontainer3 {
+
+  width: 300px;
+  height: 400px;
+  float: left;
+  margin: 20px;
+  
+  background: url("../giyim-markasi/image/mavibolabaya.jpeg");
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  
+  -webkit-box-shadow: 0 0 5px #000;
+        box-shadow: 0 0 5px #000;
+  }
+
+.hcontainer3 .overlay {
+  width: 100%;
+  height: 100%;
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+  
+  background: rgba(77, 77, 77, .9);
+  color: #FFF8DE;
+  opacity: 0;
+  transition: all 0.5s;
+  
+  font-family: 'Playfair Display', serif;
+}
+
+
+.hcontainer3 .items {
+  padding-left: 20px;
+  letter-spacing: 3px;
+}
+
+.hcontainer3 .head {
+  font-size: 30px;
+  line-height: 40px;
+  
+  transform: translateY(40px);
+  transition: all 0.7s;
+
+  .hr {
+    display: block;
+    width: 0;
+    
+    border: none;
+    border-bottom: solid 2px #FFF8DE;
+    
+    position: absolute;
+    bottom: 0; left:20px;
+    
+    transition: all .5s;
+  }
+}
+
+.hcontainer3 .price {
+ 
+  font-size: 22px;
+  line-height: 10px;
+  font-weight: bold;  
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s;
+  .old {
+    
+    margin-top: 22px;
+    margin-bottom: 22px;
+    
+  }
+ 
+}
+
+.hcontainer3 .cart {
+  font-size: 12px;
+  opacity: 0;
+  letter-spacing: 1px;
+  font-family: 'Lato', sans-serif;
+  transform: translateY(40px);
+  transition: all 0.7s;
+  .my-icon {
+    font-size: 16px;
+  }
+  .cart span {
+    margin-left: 10px;
+  }
+}
+
+.hcontainer3:hover .overlay {
+  opacity: 1;
+  & .head {
+    transform: translateY(0px);
+  }
+  
+  & hr {
+    width: 130px;
+    transition-delay: 0.4s;
+  }
+  
+  & .price {
+    transform: translateY(0px);
+    transition-delay: 0.3s;
+    opacity: 1;
+  }
+  
+  & .cart {
+    transform: translateY(0px);
+    transition-delay: 0.6s;
+    opacity: 1;
+  }
+}
   
   

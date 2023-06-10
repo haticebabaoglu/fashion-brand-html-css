@@ -1,5 +1,5 @@
 .main-nav {
-    
+
     text-decoration: none;
     display: inline-block;
     width: calc(95% - 101px);
@@ -11,7 +11,7 @@
     text-decoration: none;
     font-weight: bold;
     font-size: 25px;
-  
+
 }
 
 .main-nav__items {
@@ -21,7 +21,7 @@
 
 }
 .main-nav__item {
-    
+
     display: inline-block;
     margin: 0 10px;
 }
@@ -34,7 +34,7 @@
 }
 .main-nav__item a:hover, .main-nav__item:hover::before {
     color: #252b23;
-}      
+}
 .main-nav__item:active::before, .main-nav__item a:active {
     color:#99A981;
 }
@@ -44,12 +44,12 @@
     margin: 0;
     padding: 0;
 
-    
+
 }
 
 html {
     scroll-behavior: smooth;
-    
+
 }
 
 body {
@@ -61,27 +61,43 @@ body {
 .background {
     background-image: url(../giyim-markasi/image/pexels-photo-1023953.jpeg);
     width: 100%;
-    height: 250vh;
+    height: 70vh;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-  
+
 
 }
 
 .marka h1{
-   
+
     position: absolute;
     left: 35%;
-    top: 33%;
+    top: 20%;
     font-size: 60px;
 
-   
+
 }
 .marka p{
     position: absolute;
-    top: 45%;
+    top: 30%;
     left:  37%;
     font-size: 25px;
     font-family: 'Great Vibes', cursive;
   }
+
+#product1{
+
+    padding-left: 100px;
+    padding-top: 30px;
+  
+}
+
+.productbackground{
+    background-image: url("../giyim-markasi/image/bulut.jpeg");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
