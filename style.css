@@ -1,0 +1,87 @@
+.main-nav {
+    
+    text-decoration: none;
+    display: inline-block;
+    width: calc(95% - 101px);
+    text-align: right;
+    font-family: 'Cardo', serif;
+}
+.main-header__logo {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+  
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+.main-nav__item {
+    
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.main-nav__item a {
+    list-style: none;
+    text-decoration: none;
+    color: #606C5D;
+    font-size: 20px;
+}
+.main-nav__item a:hover, .main-nav__item:hover::before {
+    color: #252b23;
+}      
+.main-nav__item:active::before, .main-nav__item a:active {
+    color:#99A981;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    
+}
+
+html {
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    margin: 0;
+    font-family: 'Cardo', serif;}
+
+
+
+.background {
+    background-image: url(../giyim-markasi/image/pexels-photo-1023953.jpeg);
+    width: 100%;
+    height: 250vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  
+
+}
+
+.marka h1{
+   
+    position: absolute;
+    left: 35%;
+    top: 33%;
+    font-size: 60px;
+
+   
+}
+.marka p{
+    position: absolute;
+    top: 45%;
+    left:  37%;
+    font-size: 25px;
+    font-family: 'Great Vibes', cursive;
+  }
